@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Calonix</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="calculate">Calculate </string>
+    <string name="todo_list">Todo List</string>
     <string name="title_notifications">Notifications</string>
     <string name="lorem">Lorem dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore</string>
     <string name="next">NEXT</string>
