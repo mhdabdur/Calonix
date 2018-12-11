@@ -17,16 +17,17 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.botton_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new CalculateFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new CalculateCurrentFragment()).commit();
     }
     private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
+
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
             Fragment selectedFragment = null;
 
             switch (menuItem.getItemId()){
                 case R.id.nav_calculate:
-                    selectedFragment = new CalculateFragment();
+                    selectedFragment = new CalculateCurrentFragment();
                     break;
                 case R.id.nav_todo:
                     selectedFragment = new TodoFragment();
@@ -37,4 +38,5 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
     };
+
 }
