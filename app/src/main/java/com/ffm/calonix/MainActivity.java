@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment = new TodoFragment();
                     break;
             }
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
 
             return true;
         }

@@ -20,8 +20,7 @@ public class CalculateCurrentFragment extends Fragment {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction fr = getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container, new CalculateTargetFragment()).commit();
+                getFragmentManager().beginTransaction().replace(R.id.fragment_container, new CalculateTargetFragment() ).commit();
             }
         });
 
