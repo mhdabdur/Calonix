@@ -7,7 +7,7 @@
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Input Your Current Profile!"
+        android:text="Input Your Target Profile!"
         android:layout_marginTop="30sp"
         android:layout_marginLeft="20sp"
         android:textSize="20sp"
@@ -37,27 +37,14 @@
         android:text="Name"
         />
 
-    <EditText
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/editText2"
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        />
-
     <Button
         android:id="@+id/calculate_target_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editText3"
+        android:layout_below="@id/editText2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:text="@string/next"
-        android:onClick="calculateNext"
         />
 
 
