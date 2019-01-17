@@ -6,13 +6,396 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <FrameLayout
+    <ImageView
+        android:layout_marginTop="-45dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/button_navigation"
-        android:id="@+id/fragment_container">
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
 
-    </FrameLayout>
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:text="Your Daily Calorie Need"/>
+
+    <TextView
+        android:id="@+id/calorie"
+        android:layout_below="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:text="+xxxx"/>
+    <Button
+        android:id="@+id/editProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/header"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_add_circle_black_24dp"/>
+
+    <ScrollView
+        android:id="@+id/scrollable"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/calorie"
+        android:layout_above="@+id/botton_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/pagi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makan Pagi"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                />
+
+            <View
+                android:id="@+id/garisPagi"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/pagi"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:background="@drawable/divider" />
+
+
+            <ImageView
+                android:id="@+id/imgPagi"
+                android:layout_marginVertical="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/garisPagi"
+                android:layout_width="160dp"
+                android:scaleType="centerCrop"
+                android:layout_height="110dp"/>
+
+            <TextView
+                android:id="@+id/imgPagiTitle"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:fontFamily="casual"
+                android:layout_below="@+id/garisPagi"
+                android:layout_toRightOf="@+id/imgPagi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makan Pagi"
+                />
+
+            <TextView
+                android:id="@+id/imgPagiCalorie"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:textColor="@color/accent"
+                android:layout_below="@+id/imgPagiTitle"
+                android:layout_toRightOf="@+id/imgPagi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxx"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13dp"
+                android:layout_below="@+id/imgPagiCalorie"
+                android:layout_toRightOf="@+id/imgPagi"
+                android:textColor="#b4b4b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="07.00 am - 08.00 am"
+                />
+
+            <TextView
+                android:id="@+id/siang"
+                android:layout_below="@+id/imgPagi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makan Siang"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <View
+                android:id="@+id/garisSiang"
+                android:layout_below="@id/siang"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:background="@drawable/divider" />
+
+            <ImageView
+                android:id="@+id/imgSiang"
+                android:layout_marginVertical="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/garisSiang"
+                android:layout_width="160dp"
+                android:scaleType="centerCrop"
+                android:layout_height="110dp"/>
+            <TextView
+                android:id="@+id/imgSiangTitle"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:fontFamily="casual"
+                android:layout_below="@+id/garisSiang"
+                android:layout_toRightOf="@+id/imgSiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makan Pagi"
+                />
+
+            <TextView
+                android:id="@+id/imgSiangCalorie"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:textColor="@color/accent"
+                android:layout_below="@+id/imgSiangTitle"
+                android:layout_toRightOf="@+id/imgSiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxx"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13dp"
+                android:layout_below="@+id/imgSiangCalorie"
+                android:layout_toRightOf="@+id/imgSiang"
+                android:textColor="#b4b4b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11.00 am - 01.00 pm"
+                />
+
+            <TextView
+                android:id="@+id/malam"
+                android:layout_below="@+id/imgSiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makan Malam"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <View
+                android:id="@+id/garisMalam"
+                android:layout_below="@id/malam"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:background="@drawable/divider" />
+
+            <ImageView
+                android:id="@+id/imgMalam"
+                android:layout_width="160dp"
+                android:layout_height="110dp"
+                android:layout_below="@+id/garisMalam"
+                android:layout_marginVertical="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:id="@+id/imgMalamTitle"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:fontFamily="casual"
+                android:layout_below="@+id/garisMalam"
+                android:layout_toRightOf="@+id/imgMalam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makan Pagi"
+                />
+
+            <TextView
+                android:id="@+id/imgMalamCalorie"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:textColor="@color/accent"
+                android:layout_below="@+id/imgMalamTitle"
+                android:layout_toRightOf="@+id/imgMalam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxx"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13dp"
+                android:layout_below="@+id/imgMalamCalorie"
+                android:layout_toRightOf="@+id/imgMalam"
+                android:textColor="#b4b4b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="07.00 pm - 08.30 pm"
+                />
+
+            <TextView
+                android:id="@+id/minum"
+                android:layout_below="@+id/imgMalam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kebutuhan Minum"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <View
+                android:id="@+id/garisMinum"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/minum"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:background="@drawable/divider" />
+
+            <ImageView
+                android:id="@+id/imgMinum"
+                android:layout_marginVertical="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/garisMinum"
+                android:layout_width="160dp"
+                android:scaleType="centerCrop"
+                android:layout_height="110dp"/>
+
+            <TextView
+                android:id="@+id/imgMinumTitle"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:fontFamily="casual"
+                android:layout_below="@+id/garisMinum"
+                android:layout_toRightOf="@+id/imgMinum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makan Pagi"
+                />
+
+            <TextView
+                android:id="@+id/imgMinumJumlah"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:textColor="@color/accent"
+                android:layout_below="@+id/imgMinumTitle"
+                android:layout_toRightOf="@+id/imgMinum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxx"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13dp"
+                android:layout_below="@+id/imgMinumJumlah"
+                android:layout_toRightOf="@+id/imgMinum"
+                android:textColor="#b4b4b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06.00 am - 10.00 pm"
+                />
+
+
+
+            <TextView
+                android:id="@+id/snack"
+                android:layout_below="@+id/imgMinum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snack"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <View
+                android:id="@+id/garisSnack"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/snack"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:background="@drawable/divider" />
+
+            <ImageView
+
+                android:id="@+id/imgSnack"
+                android:layout_marginVertical="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/garisSnack"
+                android:layout_width="160dp"
+                android:scaleType="centerInside"
+                android:layout_height="110dp"/>
+
+            <TextView
+                android:id="@+id/imgSnackTitle"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:fontFamily="casual"
+                android:layout_below="@+id/garisSnack"
+                android:layout_toRightOf="@+id/imgSnack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makan Pagi"
+                />
+
+            <TextView
+                android:id="@+id/imgSnackCalorie"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:textColor="@color/accent"
+                android:layout_below="@+id/imgSnackTitle"
+                android:layout_toRightOf="@+id/imgSnack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxx"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13dp"
+                android:layout_below="@+id/imgSnackCalorie"
+                android:layout_toRightOf="@+id/imgSnack"
+                android:textColor="#b4b4b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="07.00 am - 08.00 pm"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/botton_navigation"

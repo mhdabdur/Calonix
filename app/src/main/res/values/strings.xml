@@ -19,6 +19,54 @@
     <string name="slide_4_title">World Travel</string>
     <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
 
+
+    <string name="sate_kambing_kkcl" >975 KKCL</string>
+    <string name="ayam_krispi_kkcl" >630 KKCL</string>
+    <string name="soto_kkcl" >600 KKCL</string>
+    <string name="pecel_lele_kkcl" >592 KKCL</string>
+    <string name="ayam_bakar_kkcl" >526 KKCL</string>
+    <string name="nasi_goreng_kkcl" >450 KKCL</string>
+    <string name="tuna_kkcl" >390 KKCL</string>
+    <string name="pempek_kkcl" >380 KKCL</string>
+    <string name="bakso_kkcl" >325 KKCL</string>
+    <string name="mie_ayam_kkcl" >225 KKCL</string>
+    <string name="salmon_kkcl" >208 KKCL</string>
+    <string name="cumi_kkcl" >200 KKCL</string>
+    <string name="tempe_kkcl" >192 KKCL</string>
+    <string name="chitose_kkcl" >150 KKCL</string>
+    <string name="tortila_kkcl" >140 KKCL</string>
+    <string name="fitbar_kkcl" >110 KKCL</string>
+    <string name="ubi_kkcl" >100 KKCL</string>
+    <string name="tictac_kkcl" >100 KKCL</string>
+    <string name="salad_kkcl" >81 KKCL</string>
+    <string name="tahu_kkcl" >76 KKCL</string>
+    <string name="air_kali10" >10 Gelas</string>
+    <string name="air_kali9" >9 Gelas</string>
+    <string name="air_kali8" >8 Gelas</string>
+
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>
+    <string name="soto">Soto Daging Sapi</string>
+    <string name="sate">Sate Daging Kambing</string>
+    <string name="ayam_krispi">Ayam Krispi</string>
+    <string name="air">Kebutuhan Air Putih</string>
+    <string name="cheetos">Cheetos</string>
+    <string name="pecel_lele">Pecel Lele</string>
+    <string name="tuna">Ikan Tuna</string>
+    <string name="fitbar">Fitbar Snack</string>
+    <string name="nasgor">Nasi Goreng</string>
+    <string name="pempek">Pempek</string>
+    <string name="tictac">Tic Tack Snack</string>
+    <string name="bakso">Bakso</string>
+    <string name="tortila">Tortilla Chips</string>
+    <string name="ayam_bakar">Ayam Bakar</string>
+    <string name="mie_ayam">Mie Ayam</string>
+    <string name="cumi">Cumi Tumis Asin</string>
+    <string name="salmon">Ikan Salmon</string>
+    <string name="nosnack">NO Snack</string>
+    <string name="tempe">Tempe Goreng</string>
+    <string name="salad">Salad Sayuran</string>
+    <string name="tahu">Hidangan Tahu</string>
+
+
 </resources>

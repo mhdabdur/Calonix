@@ -14,37 +14,36 @@
         />
 
     <EditText
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/text1"
-        android:id="@+id/editText"
+        android:id="@+id/editTargetWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        />
+        android:hint="Weight Goal"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/editText"
-        android:id="@+id/editText2"
+        android:id="@+id/editTargetTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/editTargetWeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        />
+        android:hint="Time Goal ( in week )"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/calculate_target_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editText2"
+        android:layout_below="@id/editTargetTime"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:text="@string/calculate"
+        android:onClick="calculate"
         />
 
 </RelativeLayout>

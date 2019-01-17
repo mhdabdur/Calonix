@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
     >
 
@@ -14,40 +15,37 @@
         />
 
     <EditText
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/text1"
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        />
+        android:hint="Age"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/editText"
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        />
+        android:hint="Weight"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/editText2"
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        />
+        android:hint="Height"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/calculate_current_next"
@@ -57,6 +55,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:text="@string/next"
+        android:onClick="currentNext"
 
         />
 
