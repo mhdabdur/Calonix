@@ -23,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Onboard1" />
+
         <activity android:name=".WelcomeActivity" />
         <activity android:name=".TodoMain" />
         <activity android:name=".DBconnections" />
