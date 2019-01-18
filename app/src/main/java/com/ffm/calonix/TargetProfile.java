@@ -50,6 +50,7 @@ public class TargetProfile extends AppCompatActivity {
 
             Intent intent = new Intent(TargetProfile.this, MainActivity.class);
             startActivity(intent);
+            finish();
 
 
         } catch (Exception e) {

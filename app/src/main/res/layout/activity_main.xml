@@ -59,7 +59,7 @@
                 android:id="@+id/pagi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Makan Pagi"
+                android:text="BREAKFAST"
                 android:layout_marginLeft="10dp"
                 android:textSize="20dp"
                 />
@@ -128,7 +128,7 @@
                 android:layout_below="@+id/imgPagi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Makan Siang"
+                android:text="LUNCH"
                 android:layout_marginLeft="10dp"
                 android:textSize="20dp"/>
 
@@ -194,7 +194,7 @@
                 android:layout_below="@+id/imgSiang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Makan Malam"
+                android:text="DINNER"
                 android:layout_marginLeft="10dp"
                 android:textSize="20dp"/>
 
@@ -262,7 +262,7 @@
                 android:layout_below="@+id/imgMalam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kebutuhan Minum"
+                android:text="WATER TO DRINK"
                 android:layout_marginLeft="10dp"
                 android:textSize="20dp"/>
 
@@ -331,7 +331,7 @@
                 android:layout_below="@+id/imgMinum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Snack"
+                android:text="SNACK"
                 android:layout_marginLeft="10dp"
                 android:textSize="20dp"/>
 
